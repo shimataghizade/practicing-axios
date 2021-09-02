@@ -15,7 +15,7 @@ class Blog extends Component {
     componentDidMount(){
 
         //how we can work whit axios
-         axios.get('https://jsonplaceholder.typicode.com/postsss')
+         axios.get('/posts')
                             .then(response =>{
                              const posts = response.data.slice(0,4)//how we can work whit the promise data
                              const updatedPosts = posts.map(post=>{
